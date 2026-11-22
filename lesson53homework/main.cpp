@@ -1,3 +1,4 @@
+// task02
 #include "logic.h"
 
 int main() {
