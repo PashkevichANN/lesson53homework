@@ -8,7 +8,7 @@ int sum_above_main_diagonal(int matrix[DEFAULT_SIZE][DEFAULT_SIZE], int row, int
 
 		for (int j = 0; j < column;j++) {
 
-			if (j - i == 1) {
+			if (i < j ) {
 				sum += matrix[i][j];
 			}
 
@@ -28,7 +28,7 @@ int sum_below_main_diagonal(int matrix[DEFAULT_SIZE][DEFAULT_SIZE], int row, int
 
 		for (int j = 0; j < column;j++) {
 
-			if (i - j == 1) {
+			if (i > j ) {
 				sum += matrix[i][j];
 			}
 

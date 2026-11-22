@@ -5,7 +5,7 @@ int main() {
 
 	do {
 		system("cls");
-		print("Input size of matrix (NxM): ");
+		print("Input size of matrix : ");
 		cin >> size;
 	} while (size <= 0);
 
@@ -18,7 +18,7 @@ int main() {
 	print("Sum of numbers below secondary diagonal: " + to_string(sum1) + "\n");
 
 	int sum2 = sum_above_secondary_diagonal(matrix, size);
-	print("Sum of numbers below secondary diagonal: " + to_string(sum2) + "\n");
+	print("Sum of numbers above secondary diagonal: " + to_string(sum2) + "\n");
 
 	return 0;
 }
